@@ -1,0 +1,43 @@
+body {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FAFBF5), color-stop(100%, #D0DBB6));
+}
+#main_header {
+    float: left;
+    width:100px;
+    height: 305px;
+    background: url(/assets/header_bg.png);
+    margin-top: 1%;
+    margin-left: 2%;
+    ul {
+        padding-top: 15%;
+        padding-left: 0%;
+        list-style: none;
+        li {
+            margin-top: 15%;
+            span {
+                width: 54px;
+                height: 54px;
+                display: block;
+                background: url(/assets/icons.png);
+            }
+        }
+        #header-home span.icon {
+            background-position: -4px -4px;
+        }
+        #header-home span.icon:hover {
+            background-position: -58px -4px;
+        }
+        #header-about span.icon {
+            background-position: -4px -112px;
+        }
+        #header-about span.icon:hover {
+            background-position: -58px -112px;
+        }
+        #header-contact span.icon {
+            background-position: -4px -58px;
+        }
+        #header-contact span.icon:hover {
+            background-position: -58px -58px;
+        }
+    }
+}
