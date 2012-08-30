@@ -135,18 +135,18 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 14px;
   line-height: 20px;
   color: #555555;
   background-color: #ffffff;
 }
 a {
-  color: #2fa4e7;
+  color: #6E901E;
   text-decoration: none;
 }
 a:hover {
-  color: #157ab5;
+  color: #6E901E;
   text-decoration: underline;
 }
 .img-rounded {
@@ -501,7 +501,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: 'Telex', sans-serif;
+  /*font-family: 'Telex', sans-serif;*/
   font-weight: bold;
   line-height: 1;
   color: #6E901E;
