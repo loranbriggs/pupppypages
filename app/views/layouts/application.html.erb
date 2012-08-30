@@ -12,8 +12,11 @@
 <body>
     <%= render 'layouts/_header' %>
 
-
-<%= yield %>
+    <div class="row-fluid">
+        <div class="span8 offset1">
+            <%= yield %>
+        </div>
+    </div>
 
     <%= render 'layouts/_footer' %>
 </body>

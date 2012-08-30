@@ -1,16 +1,18 @@
 body {
+    height: 100%;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FAFBF5), color-stop(100%, #D0DBB6));
 }
 #main_header {
     float: left;
-    width:100px;
+    width: 80px;
     height: 305px;
     background: url(/assets/header_bg.png);
     margin-top: 1%;
     margin-left: 2%;
     ul {
         padding-top: 15%;
-        padding-left: 0%;
+        padding-left: 20%;
+        margin-left: 0;
         list-style: none;
         li {
             margin-top: 15%;
@@ -54,13 +56,27 @@ body {
 @media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
-    
+
     #main_header {
-        width: 200px;
-        height: 610;
-        ul li span {
-            width: 108px;
-            height: 108px;
+        width: 160px;
+        height: 610px;
+        background: url(/assets/header_bg@2x.png);
+        ul {
+            padding-left: 15%;
+            li span {
+                width: 108px;
+                height: 108px;
+                background: url(/assets/icons@2x.png);
+            }
+            #header-home span.icon {
+                background-position: -4px -4px;
+            }
+            #header-about span.icon {
+                background-position: -4px -224px;
+            }
+            #header-contact span.icon {
+                background-position: -4px -116px;
+            }
         }
     }
 }
