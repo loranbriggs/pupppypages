@@ -41,3 +41,26 @@ body {
         }
     }
 }
+
+
+
+
+
+/*  Retina media query.
+    Overrides styles for devices with a 
+    device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    
+    #main_header {
+        width: 200px;
+        height: 610;
+        ul li span {
+            width: 108px;
+            height: 108px;
+        }
+    }
+}
