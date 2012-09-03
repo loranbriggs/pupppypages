@@ -1,7 +1,10 @@
 Pupppypages::Application.routes.draw do
     root  :to         => 'static_pages#home'
-    match '/about'    => 'static_pages#about'
-    match '/contact'  => 'static_pages#contact'
+    match '/features'    => 'static_pages#features'
+    match '/ordering'  => 'static_pages#ordering'
+    match '/why_us'  => 'static_pages#why_us'
+    match '/showcase'  => 'static_pages#showcase'
+
 
 
 

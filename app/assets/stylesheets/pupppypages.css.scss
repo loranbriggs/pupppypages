@@ -1,136 +1,119 @@
-body {
-    height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FAFBF5), color-stop(100%, #D0DBB6));
-    font-family: 'Headland One', serif;
-}
-#main_header {
-    float: left;
-    width: 80px;
-    height: 305px;
-    background: url(/assets/header_bg.png);
-    margin-top: 2%;
-    margin-left: 5%;
-    ul {
-        padding-top: 15%;
-        padding-left: 20%;
-        margin-left: 0;
-        list-style: none;
-        li {
-            margin-top: 15%;
-            span {
-                width: 54px;
-                height: 54px;
-                display: block;
-                background: url(/assets/icons.png);
-            }
-        }
-        #header-home span.icon {
-            background-position: -4px -4px;
-        }
-        #header-home span.icon:hover {
-            background-position: -58px -4px;
-        }
-        #header-about span.icon {
-            background-position: -4px -112px;
-        }
-        #header-about span.icon:hover {
-            background-position: -58px -112px;
-        }
-        #header-contact span.icon {
-            background-position: -4px -58px;
-        }
-        #header-contact span.icon:hover {
-            background-position: -58px -58px;
-        }
-    }
-}
+$color1: #748C73; //lt green
+//$color2: #; //med green
+$color3: #013435; //dk green
+$color4: #EBD90B; //yellow
+$white:  #dddddd; 
 
-#logo {
-    h1 {
-        margin-top: 5%;
-        margin-bottom: 7%;
-        font-size: 700%;
-        font-weight: 100;
-        font-family: 'Waiting for the Sunrise', cursive;
-    }
-    h2 {
-        font-size: 200%;
-        color: #013435;
-    }
-    span {
-        color: #454559;
-        font-family: 'Waiting for the Sunrise', cursive;
-    }
+body {
+    //background: url(/assets/bg.jpg);
+    font-family: 'Headland One', serif;
+    margin: 0;
+    padding: 0;
 }
 
 #main {
-    .well {
-        -webkit-border-radius: 30px;
-           -moz-border-radius: 30px;
-                border-radius: 30px;
+    /* temp */
+    h4 {color: red;}
+
+
+    height: 416px;
+    margin: 0;
+    padding: 0;
+
+
+    .my-well {
+        background-color: #222;
+        padding: 5px;
     }
-    #change {
-        .well {
-            float: left;
-            margin-left: 2%;
-            width: 25%;
+    .shadow {
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+    }
+
+    header {
+        #title {
+            //background: -webkit-gradient(linear, left top, left bottom, from($color1), to($color3));
+            background-color: $color3;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            h1 {
+                font-family: 'Waiting for the Sunrise', cursive;
+                font-size: 200%;
+                font-weight: 100;
+                text-align: center;
+                span {color:$white;}
+            }
+        }
+        #logo {
+            display: none;
+        }
+    }
+
+    #change, #your {
+        background: url(/assets/bg-small.png);
+        //height: 60px;
+        padding: 5px 0px 5px 0px;
+        p {
+            font-size: 100%;
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    #grid {
+        background: 
+            -webkit-linear-gradient( -85deg, black 20%, $color3 );
+        height: 185px;
+        padding: 50px 0px 50px 0px;
+        .square {
+            height: 70px;
+            padding-top: 2%;
+            text-align: center;
+            border-style: solid;
+            border-width: 2px;
+            border-color: darken($color3, 6%);
+            span {
+                color: $color4;
+            }
+        }
+        #work {
+            margin-top: 50px;
         }
     }
 }
 
-/*  For Devices with screen widths smaller than 767:
-    such as phones and iTouches
------------------------------------------------    */
 
-@media only screen and (max-device-width: 767px) {
-    #logo {
-        h1 {
-            //font-size: 800%;
-        }
-    }
+
+
+//add media > 479
+
+//add media > 767
+
+@media only screen and (min-device-width: 1224px) {
     #main {
-        #change {
-            .well {
-                float: none;
-                //margin-left: 2%;
-                width: 50%;
+        height: 700px;
+        margin: 5% 20% 0% 20%;
+        header {
+            #title {
+                height: auto;
+                h1 {
+                    font-size: 500%; 
+                    margin-right:100px;
+                }
+            }
+            #logo {
+                display: block;
+                float: left; 
+                padding-left: 2%;
+                padding-top: 1%;
+                width: 100px;
+                height: 100px;
             }
         }
     }
 }
 
 
-/*  Retina media query.
-    Overrides styles for devices with a 
-    device-pixel-ratio of 2+, such as iPhone 4.
------------------------------------------------    */
-
-@media 
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2) {
-
-    #main_header {
-        width: 160px;
-        height: 610px;
-        background: url(/assets/header_bg@2x.png);
-        margin-top: 0;
-        margin-left: 0;
-        ul {
-            padding-left: 15%;
-            li span {
-                width: 108px;
-                height: 108px;
-                background: url(/assets/icons@2x.png);
-            }
-            #header-home span.icon {
-                background-position: -4px -4px;
-            }
-            #header-about span.icon {
-                background-position: -4px -224px;
-            }
-            #header-contact span.icon {
-                background-position: -4px -116px;
-            }
-        }
-    }
-}

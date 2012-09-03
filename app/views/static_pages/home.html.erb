@@ -1,43 +1,59 @@
-<% provide(:title, 'Designing Your Website the Right Way') %>
-<%= render 'layouts/_logo' %>
-<div class="row-fluid">
-    <div class="span6 offset2">
-        <div class="well">
-            <h2>The web is changing....</h2>
-        </div>
-    </div>
-</div>
+<% provide(:title, 'PupppyPages') %>
+<%= render 'layouts/_header' %>
 
 <div id="change" class="row-fluid">
-    <div id="mobile">
-        <div class="well">
-            <img src="/assets/iphone_htc_pupppy.png" alt="mobile"/>
-            <h4>
-                Increasingly Mobile
-            </h4>
+    <div class="span10 offset1 my-well shadow">
+        <p>
+            The web is changing...
+        </p>
+    </div>
+</div>
+<div id="grid">
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+                <div id="features" class="square span4 shadow">
+                    <a href="/features">
+                        <span>!</span>
+                        <p>
+                            Features
+                        </p>
+                    </a>
+                </div>
+                <div id="ordering" class="span4 square shadow">
+                    <a href="/ordering">
+                        <span>$</span>
+                        <p>
+                            Ordering
+                        </p>
+                    </a>
+                </div>
+                <div id="why" class="span4 square shadow">
+                    <a href="/why_us">
+                        <span>?</span>
+                        <p>
+                            Why us
+                        </p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="search">
-        <div class="well">
-            <img src="/assets/binary.png" alt="search"/>
-            <h4>
-                Complex Search Alogrithms
-            </h4>
-        </div>
-    </div>
-    <div id="maps">
-        <div class="well">
-            <iframe width="200" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=34.015673,-118.491669&amp;spn=0.028457,0.034504&amp;z=13&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=34.015673,-118.491669&amp;spn=0.028457,0.034504&amp;z=13&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-            <h4>
-                Interactive Maps
-            </h4>
+    <div class="row-fluid">
+        <div id="work" class="span10 offset1 square shadow">
+            <span>--></span>
+            <a href="/showcase">
+                <p>
+                    See our work
+                </p>
+            </a>
         </div>
     </div>
 </div>
-<div class="row-fluid">
-    <div class="span7 offset1">
-        <div class="well">
-            <h2>Is your business changing with it?</h2>
-        </div>
+<div id="your" class="row-fluid">
+    <div class="span10 offset1 my-well shadow">
+        <p>
+            Is your business keeping up?
+        </p>
     </div>
 </div>
